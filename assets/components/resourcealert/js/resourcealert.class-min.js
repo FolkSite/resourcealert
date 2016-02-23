@@ -1,0 +1,1 @@
+var resourcealert=function(config){config=config||{};resourcealert.superclass.constructor.call(this,config)};Ext.extend(resourcealert,Ext.Component,{page:{},window:{},grid:{},tree:{},panel:{},combo:{},config:{}});Ext.reg('resourcealert',resourcealert);var resourcealert=new resourcealert()

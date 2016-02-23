@@ -1,0 +1,18 @@
+.resourcealert-resource-body {
+padding: 10px 0 10px 20px;
+}
+
+
+.resourcealert-grid .resourcealert-unpublished,
+.resourcealert-grid .resourcealert-unpublished span,
+.resourcealert-grid .resourcealert-unpublished a {
+color: gray;
+}
+.x-grid3-body .x-grid3-td-checker {
+background-image: none !important;
+}
+
+.resourcealert-deleted, .resourcealert-deleted span, .resourcealert-deleted a,
+.resourcealert-grid .resourcealert-deleted, .resourcealert-grid .resourcealert-deleted span, .resourcealert-grid .resourcealert-deleted a {
+color: red !important;
+}

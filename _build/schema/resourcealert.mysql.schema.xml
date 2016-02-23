@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="resourcealert" baseClass="xPDOSimpleObject" platform="mysql" defaultEngine="MyISAM" phpdoc-package="resourcealert" phpdoc-subpackage="model">
+<object class="resourcealertItem" table="resourcesalert_subscriptions" extends="xPDOSimpleObject">
+  <field key="user" dbtype="int" precision="1" attributes="unsigned" phptype="integer" null="false" default="0" index="index" />
+  <field key="resource" dbtype="int" precision="1" attributes="unsigned" phptype="integer" null="false" default="0" index="index" />  
+</object>
+<object class="resourcealertAlert" table="resourcesalert_alerts" extends="xPDOSimpleObject">
+  <field key="resource" dbtype="int" precision="1" attributes="unsigned" phptype="integer" null="false" default="0" index="index" />
+  <field key="date" dbtype="int" precision="11" attributes="unsigned" phptype="integer" null="false" index="index" />
+  <field key="status" dbtype="tinyint" precision="1" attributes="unsigned" phptype="integer" default="0" null="false" />
+		<index alias="resource" name="resource" primary="false" unique="false" type="BTREE" >
+			<column key="resource" length="" collation="A" null="false" />
+		</index>
+		<index alias="date" name="date" primary="false" unique="false" type="BTREE" >
+			<column key="date" length="" collation="A" null="false" />
+		</index>
+</object>
+</model>
